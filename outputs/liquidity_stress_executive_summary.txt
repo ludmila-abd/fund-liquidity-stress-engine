@@ -1,0 +1,83 @@
+
+FUND LIQUIDITY MISMATCH STRESS ENGINE — EXECUTIVE SUMMARY
+
+Stress date:
+- 2027-03-31
+
+Fund:
+- Global Income Opportunities Fund
+- Fund type: Open-Ended Multi-Asset Fund
+- Base currency: GBP
+- Dealing frequency: Daily
+- Redemption notice days: 1
+
+Fund size:
+- Fund NAV: £1,000,000,000.00
+- Number of holdings: 26
+- Watchlist holdings: 8
+- Invalid holdings: 0
+
+Initial liquidity profile:
+- T+0 assets: £100,000,000.00
+- T+1 assets: £350,000,000.00
+- T+3 assets: £150,000,000.00
+- T+7 assets: £145,000,000.00
+- T+30 assets: £150,000,000.00
+- T+90+ assets: £105,000,000.00
+
+Stress testing outcome:
+- Redemption scenarios tested: 5
+- Scenarios met in full: 2
+- Scenarios requiring escalation: 3
+- High / critical liquidity scenarios: 2
+- Minimum liquidity coverage ratio: 1.23x
+- Worst LCR scenario: Systemic Liquidity Run
+- Maximum fire-sale cost: £6,513,019.36
+- Worst fire-sale scenario: Systemic Liquidity Run
+- Weakest remaining liquidity ratio: 53.08%
+- Systemic run outcome: PARTIAL_GATE_ESCALATION_REVIEW
+
+Scenario interpretation:
+1. Mild Outflow:
+   - The fund meets the redemption in full using available liquidity.
+   - No material fire-sale cost is generated.
+
+2. Elevated Outflow:
+   - The fund meets the redemption in full.
+   - Liquidity remains sufficient under the tested horizon.
+
+3. Stress Redemption:
+   - The fund meets the redemption, but fire-sale cost emerges.
+   - Model-suggested action: SWING_PRICING_REVIEW
+
+4. Crisis Redemption:
+   - The fund meets the redemption, but forced selling becomes more material.
+   - Fire-sale cost: £2,040,030.31
+   - Model-suggested action: SWING_PRICING_TRIGGERED
+
+5. Systemic Liquidity Run:
+   - The fund meets the redemption amount in this modelled run, but only by materially depleting liquid assets.
+   - Redemption amount: £450,000,000.00
+   - Liquidity coverage ratio: 1.23x
+   - Fire-sale cost: £6,513,019.36
+   - Remaining liquidity ratio: 53.08%
+   - Remaining illiquid ratio: 46.92%
+   - Model-suggested escalation: PARTIAL_GATE_ESCALATION_REVIEW
+
+Business interpretation:
+The engine compares asset-side liquidity against liability-side redemption pressure.
+It shows that the fund can meet mild and elevated outflows cleanly, but larger shocks require escalation because forced selling begins to create material dilution and leaves the remaining portfolio less liquid.
+
+The systemic scenario is especially important. Even though the model raises enough cash by the deadline, the fund's residual liquidity profile weakens materially. This means the fund may survive the first redemption wave but become more vulnerable to a second wave of redemptions.
+
+Final model conclusion:
+- The fund does not experience a cash shortfall in the tested scenarios.
+- The fund does experience material liquidity deterioration under severe redemption pressure.
+- The systemic liquidity run requires liquidity committee escalation.
+- The model-suggested outcome for the tail scenario is: PARTIAL_GATE_ESCALATION_REVIEW
+
+Reporting outputs:
+- Excel reporting pack: liquidity_stress_report.xlsx
+- Executive summary file: liquidity_stress_executive_summary.txt
+- Charts created: 9
+- Workbook sheets exported: 27
