@@ -6,12 +6,12 @@ This project simulates a **fund liquidity mismatch stress engine** for an open-e
 
 The engine compares:
 
-- **asset-side liquidity** — how quickly the fund can turn holdings into cash
-- **liability-side liquidity** — how quickly investors can redeem
-- **redemption shocks** — what happens when investors request cash under stress
-- **fire-sale costs** — value lost when assets must be sold quickly
-- **remaining portfolio liquidity** — how liquid the fund is after meeting redemptions
-- **model-suggested escalation outcomes** — whether the fund can meet redemptions cleanly or needs liquidity committee review
+- **asset-side liquidity** - how quickly the fund can turn holdings into cash
+- **liability-side liquidity** - how quickly investors can redeem
+- **redemption shocks** - what happens when investors request cash under stress
+- **fire-sale costs** - value lost when assets must be sold quickly
+- **remaining portfolio liquidity** - how liquid the fund is after meeting redemptions
+- **model-suggested escalation outcomes** - whether the fund can meet redemptions cleanly or needs liquidity committee review
 
 The project extends a fund operations portfolio from:
 
